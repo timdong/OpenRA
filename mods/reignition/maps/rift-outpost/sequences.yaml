@@ -1,0 +1,327 @@
+daxia-chidian:
+	Defaults:
+		Filename: daxia-chidian.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	turret:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+daxia-houyi:
+	Defaults:
+		Filename: daxia-houyi.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	turret:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+crimson-xingtian:
+	Defaults:
+		Filename: crimson-xingtian.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	turret:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+crimson-thunderbolt:
+	Defaults:
+		Filename: crimson-thunderbolt.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	turret:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+allied-prism:
+	Defaults:
+		Filename: allied-prism.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	turret:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+allied-hound:
+	Defaults:
+		Filename: allied-hound.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	turret:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+reignition-mcv:
+	Defaults:
+		Filename: reignition-mcv.png
+	idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	empty-idle:
+		Facings: 8
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+
+daxia-fact:
+	Defaults:
+		Filename: daxia-fact.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-weap:
+	Defaults:
+		Filename: daxia-weap.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-barr:
+	Defaults:
+		Filename: daxia-barr.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-lab:
+	Defaults:
+		Filename: daxia-lab.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-silo:
+	Defaults:
+		Filename: daxia-silo.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-powr:
+	Defaults:
+		Filename: daxia-powr.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-dome:
+	Defaults:
+		Filename: daxia-dome.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-gun:
+	Defaults:
+		Filename: daxia-gun.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	muzzle:
+	dead:
+	icon:
+
+crimson-tsla:
+	Defaults:
+		Filename: crimson-tsla.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+allied-pdox:
+	Defaults:
+		Filename: allied-pdox.png
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-rocket:
+	stand:
+		Filename: daxia-rocket-idle.png
+		Length: 4
+		Facings: 8
+		Tick: 300
+	stand2:
+		Filename: daxia-rocket-idle.png
+		Length: 4
+		Facings: 8
+		Tick: 350
+	run:
+		Filename: daxia-rocket-walk.png
+		Length: 6
+		Facings: 8
+		Tick: 120
+	shoot:
+		Filename: daxia-rocket-attack.png
+		Length: 4
+		Facings: 8
+		Tick: 100
+	parachute:
+		Filename: daxia-rocket-idle.png
+		Start: 0
+	idle1:
+		Filename: daxia-rocket-idle.png
+		Length: 4
+		Tick: 300
+	idle2:
+		Filename: daxia-rocket-idle.png
+		Length: 4
+		Tick: 350
+	icon:
+		Filename: daxia-rocket-idle.png
+	prone-stand:
+		Filename: e3.shp
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-stand2:
+		Filename: e3.shp
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-run:
+		Filename: e3.shp
+		Start: 144
+		Length: 4
+		Facings: 8
+		Tick: 120
+	prone-shoot:
+		Filename: e3.shp
+		Start: 192
+		Length: 10
+		Facings: 8
+	die1:
+		Filename: e3.shp
+		Start: 304
+		Length: 8
+		Tick: 80
+	die2:
+		Filename: e3.shp
+		Start: 312
+		Length: 8
+		Tick: 80
+	die3:
+		Filename: e3.shp
+		Start: 320
+		Length: 8
+		Tick: 80
+	die4:
+		Filename: e3.shp
+		Start: 328
+		Length: 12
+		Tick: 80
+	die5:
+		Filename: e3.shp
+		Start: 340
+		Length: 18
+		Tick: 80
+	die6:
+		Filename: electro.tem
+		TilesetFilenames:
+			SNOW: electro.sno
+		Frames: 0, 1, 2, 3, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+		Length: *
+		Tick: 80
+	die-crushed:
+		Filename: corpse1.tem
+		TilesetFilenames:
+			SNOW: corpse1.sno
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
