@@ -1,0 +1,25 @@
+NUCLEAR:
+	Inherits: APWR
+	Buildable:
+		BuildPaletteOrder: 160
+		Prerequisites: techcenter, ~techlevel.high
+		Description: reignition-nuclear.description
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: reignition-nuclear.name
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+		LocalCenterOffset: 0,0,0
+	Selectable:
+		DecorationBounds: 3584, 2560
+	HitShape:
+		TargetableOffsets: 0,0,0
+	Health:
+		HP: 150000
+	Power:
+		Amount: 500
+	RenderSprites:
+		Image: reignition-nuclear
+	-WithBuildingBib:

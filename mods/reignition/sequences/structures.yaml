@@ -1,0 +1,11 @@
+reignition-nuclear:
+	Defaults:
+		Filename: reignition-nuclear.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	dead:
+	icon:
+		Filename: reignition-nuclear-icon.png
+		Scale: 1

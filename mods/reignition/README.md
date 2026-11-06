@@ -17,6 +17,7 @@ has been removed.
 | Infantry | Field barracks | Barracks, kennel | Power |
 | Vehicles | Vehicle works, logistics/repair depot | War factory, repair depot | Refinery; factory for repair depot |
 | Radar and power | Radar, advanced power plant | Radar, advanced power plant | Refinery for radar; radar for advanced power |
+| Nuclear power | Nuclear reactor (`NUCLEAR`) | Nuclear reactor (`NUCLEAR`) | Research/tech center; high or unrestricted technology |
 | Naval base | Naval yard (`SYRD`) | Sub pen (`SPEN`) | Power; place in water within building range |
 | Air base | Helipad (`HPAD`) | Airfield (`AFLD`) | Radar |
 | Research | Research center (`ATEK`) | Tech center (`STEK`) | Factory and radar |
@@ -29,6 +30,13 @@ has been removed.
 The construction yard is deployed from an MCV. Additional MCVs require a vehicle
 factory and repair depot. Superweapons are built explicitly; establishing the
 base does not spawn a free Chrono terminal.
+
+The nuclear reactor is available throughout the mod and uses the supplied
+reference artwork. It costs 2000 credits and produces 500 power at full health;
+damage reduces output through the inherited power-plant behavior. It occupies
+3 × 2 cells and retains repair, sale and capture support. Rebuild its transparent
+world sprite and separate production icon with
+`new-design/build-nuclear-assets.ps1`.
 
 ## Naval and air production
 
