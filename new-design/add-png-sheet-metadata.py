@@ -25,7 +25,14 @@ for name in VEHICLES:
     if data[:8] != b"\x89PNG\r\n\x1a\n":
         raise ValueError(f"Not a PNG: {path}")
 
-    metadata = chunk(b"tEXt", b"FrameSize\x0064,56") + chunk(b"tEXt", b"FrameAmount\x0016") + chunk(b"tEXt", b"Offset\x000,0")
+    width, height = struct.unpack(">II", data[16:24])
+    if (width, height) == (64, 56):
+        print(f"Single-frame asset needs no slicing metadata: {name}")
+        continue
+    if (width, height) != (128, 448):
+        raise ValueError(f"Unexpected vehicle sheet dimensions for {name}: {width}x{height}")
+
+    metadata = chunk(b"tEXt", b"FrameSize\x0064,28") + chunk(b"tEXt", b"FrameAmount\x0032") + chunk(b"tEXt", b"Offset\x000,0")
     output = data[:8]
     offset = 8
     inserted = False
@@ -42,4 +49,4 @@ for name in VEHICLES:
         offset += 12 + length
 
     path.write_bytes(output)
-    print(f"Added 8-direction, 2-frame metadata to {name}")
+    print(f"Added 64x28 vehicle-frame metadata to {name}")

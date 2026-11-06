@@ -287,10 +287,6 @@ Actors:
 	Actor90: ftur
 		Location: 80,87
 		Owner: USSR
-	Actor105: jeep
-		Location: 19,64
-		Owner: Greece
-		Facing: 508
 	Actor109: e2
 		Location: 13,85
 		Owner: USSR
@@ -301,21 +297,6 @@ Actors:
 		Owner: USSR
 		Facing: 124
 		SubCell: 4
-	Actor111: e1
-		Location: 20,64
-		Owner: Greece
-		Facing: 636
-		SubCell: 2
-	Actor112: e1
-		Location: 19,65
-		Owner: Greece
-		Facing: 508
-		SubCell: 0
-	Actor113: e1
-		Location: 18,64
-		Owner: Greece
-		Facing: 508
-		SubCell: 1
 	Actor114: e1
 		Location: 23,82
 		Owner: USSR

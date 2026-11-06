@@ -8,7 +8,8 @@ reignition-difficulty =
 reignition-briefing =
     Commander, the Daxia Iron Fist must stop the Crimson Tide from activating three temporal research hubs.
 
-    Deploy your original-design MCV and build a refinery to unlock the Chrono Maneuver terminal.
+    Deploy your original-design MCV and build a refinery to establish the outpost and start harvesting ore.
+    Build a naval yard on nearby water to produce ships. Radar unlocks advanced power plants and a helipad; a research center unlocks advanced units and superweapons.
     Chidian assault vehicles can deploy with F: gain range and fire rate, but cannot move until undeployed.
     Buran tanks deploy to reduce incoming damage.
     Nearby power plants gain output; linked sentry guns and Tesla coils gain range.
@@ -36,7 +37,7 @@ reignition-chrono-terminal = Chrono Maneuver Terminal
 reignition-chrono-power = Chrono Maneuver
 reignition-chrono-power-description = Select a 3x3 group of own vehicles, then select a visible destination. Units return after the effect expires.
 
-reignition-base-established = Daxia outpost established. Chidian deployment is online, and a Chrono Maneuver terminal has arrived.
+reignition-base-established = Daxia outpost established. The refinery is ready to receive ore.
 reignition-labs-marked = Radar data received. All three temporal research hubs have been marked.
 reignition-enemy-activated = Recon reports that Crimson Tide attack groups are mobilizing.
 reignition-mission-complete = All three research hubs are offline. Daxia prototype mission complete.

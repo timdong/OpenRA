@@ -16,8 +16,8 @@ InitialAlliedReinforcements = function()
 	local camera = Actor.Create("Camera", true, { Owner = Greece, Location = DefaultCameraPosition.Location })
 	Trigger.AfterDelay(DateTime.Seconds(30), camera.Destroy)
 
-	Reinforcements.Reinforce(Greece, { "jeep", "jeep", "e1", "e1", "e1" }, { AlliedEntry1.Location, UnitBStopLocation.Location }, 2)
-	Reinforcements.Reinforce(Greece, { "2tnk", "2tnk", "e3", "e3", "e3" }, { AlliedEntry2.Location, UnitAStopLocation.Location }, 2)
+	Reinforcements.Reinforce(Greece, { "jeep", "e1", "e1" }, { AlliedEntry1.Location, UnitBStopLocation.Location }, 2)
+	Reinforcements.Reinforce(Greece, { "2tnk", "e3" }, { AlliedEntry2.Location, UnitAStopLocation.Location }, 2)
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
 		Reinforcements.Reinforce(Greece, { "mcv" }, { AlliedEntry3.Location, MCVStopLocation.Location })
 		MissionActive = true
@@ -40,7 +40,6 @@ EstablishBase = function()
 	BaseEstablished = true
 	Greece.MarkCompletedObjective(EstablishBaseObjective)
 	Media.PlaySpeechNotification(Greece, "FirstObjectiveMet")
-	Actor.Create("pdox", true, { Owner = Greece, Location = MCVStopLocation.Location + CVec.New(5, 3) })
 	Media.DisplayMessage(UserInterface.GetFluentMessage("reignition-base-established"))
 	ActivateAI()
 end

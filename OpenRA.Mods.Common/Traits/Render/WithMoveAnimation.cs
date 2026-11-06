@@ -56,13 +56,14 @@ namespace OpenRA.Mods.Common.Traits.Render
 			if (!IsTraitDisabled && (types & Info.ValidMovementTypes) != 0)
 				playAnim = true;
 
-			if (!playAnim && wsb.DefaultAnimation.CurrentSequence.Name == Info.MoveSequence)
+			var currentSequence = wsb.DefaultAnimation.CurrentSequence;
+			if (!playAnim && currentSequence != null && currentSequence.Name == Info.MoveSequence)
 			{
 				wsb.CancelCustomAnimation(self);
 				return;
 			}
 
-			if (playAnim && wsb.DefaultAnimation.CurrentSequence.Name != Info.MoveSequence)
+			if (playAnim && (currentSequence == null || currentSequence.Name != Info.MoveSequence))
 				wsb.PlayCustomAnimationRepeating(self, Info.MoveSequence);
 		}
 

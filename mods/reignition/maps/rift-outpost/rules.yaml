@@ -8,7 +8,7 @@ World:
 	MissionData:
 		Briefing: reignition-briefing
 	MapOptions:
-		TechLevel: medium
+		TechLevel: unrestricted
 	ScriptLobbyDropdown@difficulty:
 		ID: difficulty
 		Label: reignition-difficulty.label
@@ -18,6 +18,9 @@ World:
 			normal: reignition-difficulty.normal
 			hard: reignition-difficulty.hard
 		Default: normal
+
+# Buildings and units inherit the complete RA production tree. Keep faction and
+# building prerequisites; do not reintroduce the former MVP disable list.
 
 TECH.CAM:
 	Inherits: CAMERA
@@ -66,131 +69,13 @@ STEK:
 	Tooltip:
 		Name: reignition-actor-rift-lab
 
-APWR:
-	Buildable:
-		Prerequisites: ~disabled
-
-AFLD:
-	Buildable:
-		Prerequisites: ~disabled
-
-HPAD:
-	Buildable:
-		Prerequisites: ~disabled
-
-SYRD:
-	Buildable:
-		Prerequisites: ~disabled
-
-SPEN:
-	Buildable:
-		Prerequisites: ~disabled
-
-MSLO:
-	Buildable:
-		Prerequisites: ~disabled
-
-IRON:
-	Buildable:
-		Prerequisites: ~disabled
-
 PDOX:
-	Buildable:
-		Prerequisites: ~disabled
 	Tooltip:
 		Name: reignition-chrono-terminal
 	ChronoshiftPower@chronoshift:
 		ChargeInterval: 1500
 		Name: reignition-chrono-power
 		Description: reignition-chrono-power-description
-
-GAP:
-	Buildable:
-		Prerequisites: ~disabled
-
-ATEK:
-	Buildable:
-		Prerequisites: ~disabled
-
-4TNK:
-	Buildable:
-		Prerequisites: ~disabled
-
-TTNK:
-	Buildable:
-		Prerequisites: ~disabled
-
-QTNK:
-	Buildable:
-		Prerequisites: ~disabled
-
-MRJ:
-	Buildable:
-		Prerequisites: ~disabled
-
-FTRK:
-	Buildable:
-		Prerequisites: ~disabled
-
-DTRK:
-	Buildable:
-		Prerequisites: ~disabled
-
-MNLY:
-	Buildable:
-		Prerequisites: ~disabled
-
-E7:
-	Buildable:
-		Prerequisites: ~disabled
-
-THF:
-	Buildable:
-		Prerequisites: ~disabled
-
-SPY:
-	Buildable:
-		Prerequisites: ~disabled
-
-SHOK:
-	Buildable:
-		Prerequisites: ~disabled
-
-MIG:
-	Buildable:
-		Prerequisites: ~disabled
-
-YAK:
-	Buildable:
-		Prerequisites: ~disabled
-
-HELI:
-	Buildable:
-		Prerequisites: ~disabled
-
-HIND:
-	Buildable:
-		Prerequisites: ~disabled
-
-TRAN:
-	Buildable:
-		Prerequisites: ~disabled
-
-DD:
-	Buildable:
-		Prerequisites: ~disabled
-
-CA:
-	Buildable:
-		Prerequisites: ~disabled
-
-SS:
-	Buildable:
-		Prerequisites: ~disabled
-
-MSUB:
-	Buildable:
-		Prerequisites: ~disabled
 
 FACT:
 	Tooltip:
@@ -313,11 +198,19 @@ MCV:
 	RenderSprites:
 		FactionImages:
 			allies: reignition-mcv
+	WithMoveAnimation:
+	-WithParachute:
+	-WithDamageOverlay:
 
 JEEP:
 	RenderSprites:
 		FactionImages:
 			allies: allied-hound
+	WithMoveAnimation:
+	-WithMuzzleOverlay:
+	-WithSpriteTurret:
+	-WithParachute:
+	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-hound
 
@@ -325,8 +218,11 @@ JEEP:
 	RenderSprites:
 		FactionImages:
 			allies: daxia-chidian
+	WithMoveAnimation:
 	-WithSpriteTurret:
 	-WithMuzzleOverlay:
+	-WithParachute:
+	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-chidian
 		GenericName: reignition-actor-chidian
@@ -335,6 +231,10 @@ ARTY:
 	RenderSprites:
 		FactionImages:
 			allies: daxia-houyi
+	WithMoveAnimation:
+	-WithMuzzleOverlay:
+	-WithParachute:
+	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-houyi
 
@@ -342,6 +242,15 @@ V2RL:
 	RenderSprites:
 		FactionImages:
 			soviet: crimson-thunderbolt
+	WithMoveAnimation:
+		Body: loaded
+		RequiresCondition: !reloading
+	WithMoveAnimation@EMPTY:
+		Body: reloading
+		MoveSequence: empty-move
+		RequiresCondition: reloading
+	-WithParachute:
+	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-thunderbolt
 
@@ -349,8 +258,11 @@ V2RL:
 	RenderSprites:
 		FactionImages:
 			soviet: crimson-xingtian
+	WithMoveAnimation:
 	-WithSpriteTurret:
 	-WithMuzzleOverlay:
+	-WithParachute:
+	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-xingtian
 
@@ -369,7 +281,7 @@ POWR:
 PROC:
 	RenderSprites:
 		FactionImages:
-			allies: daxia-silo
+			allies: daxia-refinery
 	-WithBuildingBib:
 	-WithIdleOverlay@TOP:
 
@@ -436,6 +348,8 @@ E3:
 	RenderSprites:
 		FactionImages:
 			allies: daxia-rocket
+	WithFacingSpriteBody:
+		Sequence: stand
 	Tooltip:
 		Name: reignition-actor-rocket
 	Buildable:

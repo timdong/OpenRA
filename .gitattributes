@@ -4,6 +4,9 @@
 *.cs eol=lf
 *.csproj eol=lf
 *.sln eol=lf
+*.sh eol=lf
+*.py eol=lf
+*.in eol=lf
 * text=lf
 
 # Custom for Visual Studio
