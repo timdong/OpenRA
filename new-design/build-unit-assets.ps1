@@ -13,11 +13,13 @@ $assets = @(
     @{ Source = 'nu_ifv'; World = 'reignition-apc' },
     @{ Source = 'nu_kirov'; World = 'reignition-kirov' },
     @{ Source = 'nu_mig'; World = 'reignition-mig' },
-    @{ Source = 'nu_nhaw'; World = 'reignition-mh60' },
     @{ Source = 'nu_sub'; World = 'reignition-ss' },
     @{ Source = 'nu_ttnk'; World = 'reignition-ttnk' },
     @{ Source = 'nu_v3'; World = 'reignition-v2rl' }
 )
+
+# MH60 now uses the layered nhaw artwork. Rebuild it separately with
+# build-nhaw-animation.py so this static asset pass cannot erase its animation.
 
 function New-Cutout([string]$path) {
     $source = [System.Drawing.Bitmap]::new($path)

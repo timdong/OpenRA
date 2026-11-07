@@ -66,8 +66,12 @@ YAK:
 MH60:
 	RenderSprites:
 		Image: reignition-mh60
-	-WithIdleOverlay@ROTORAIR:
-	-WithIdleOverlay@ROTORGROUND:
+	WithIdleOverlay@ROTORAIR:
+		Sequence: rotor
+		RequiresCondition: airborne
+	WithIdleOverlay@ROTORGROUND:
+		Sequence: slow-rotor
+		RequiresCondition: !airborne
 	-WithMuzzleOverlay:
 
 SS:

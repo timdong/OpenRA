@@ -149,6 +149,16 @@ inherited RA rules.
 The original Hind remains an editor/campaign unit, with the Black Hawk filling
 the normal buildable helicopter role.
 
+The Black Hawk (`MH60`) uses the layered `reignition-nhaw` design: both rotors
+counter-rotate above a static body, with 24 fast airborne frames (40 ms/frame,
+75 degrees per frame, five revolutions per loop) and motion trails
+and 12 slow grounded frames (120 ms/frame). Both layers use the same alignment
+and scale. Rebuild the body, rotor sheet and production icon using Pillow:
+`python new-design/build-nhaw-animation.py`. Source layers are stored in
+`new-design/source-assets/reignition-nhaw/large`; the script also writes
+`new-design/nhaw-rotor-preview.gif`. The generic static-unit asset builder
+excludes this helicopter so it cannot overwrite the animated version.
+
 Previously disabled advanced ground units are also restored to their inherited
 technology and faction prerequisites. Existing Reignition art overrides remain
 in place; restored buildings and aircraft without custom artwork use RA assets.

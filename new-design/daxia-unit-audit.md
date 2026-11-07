@@ -22,7 +22,7 @@ prerequisites without changing those original support actors.
 | `nu_dest` | `DD` | Already available: naval yard + radar; includes depth charges |
 | `nu_harv` | `HARV` | Already available: vehicle works; refinery also supplies a harvester |
 | `nu_howz` | `ARTY` | Already available: vehicle works + radar |
-| `nu_nhaw` | `MH60` | Already available: helipad; currently a gunship, not a troop transport |
+| `nu_nhaw` → layered `reignition-nhaw` | `MH60` | Helipad; new body and counter-rotating dual rotors; currently a gunship, not a troop transport |
 
 All 12 supplied designs are represented by producible Daxia units on the
 bundled Conquest maps and Rift Outpost. High-tier units still require the

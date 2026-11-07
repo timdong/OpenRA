@@ -103,12 +103,20 @@ reignition-mh60:
 	idle:
 		Facings: 1
 	rotor:
+		Filename: reignition-mh60-rotors.png
+		Length: 24
+		Tick: 40
 		Facings: 1
 	slow-rotor:
+		Filename: reignition-mh60-rotors.png
+		Start: 24
+		Length: 12
+		Tick: 120
 		Facings: 1
 	muzzle:
 	icon:
 		Filename: reignition-mh60-icon.png
+		Scale: 1
 
 reignition-ss:
 	Defaults:
