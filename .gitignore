@@ -50,3 +50,6 @@ update.log
 
 # IntelliJ files
 .idea
+
+# local debug screenshots
+/screen*.png
