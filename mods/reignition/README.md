@@ -32,10 +32,11 @@ factory and repair depot. Superweapons are built explicitly; establishing the
 base does not spawn a free Chrono terminal.
 
 The nuclear reactor is available throughout the mod and uses the supplied
-reference artwork. It costs 2000 credits and produces 500 power at full health;
-damage reduces output through the inherited power-plant behavior. It occupies
-3 × 2 cells and retains repair, sale and capture support. Rebuild its transparent
-world sprite and separate production icon with
+reference artwork. It costs 2500 credits and produces 500 power at full health;
+damage reduces output through the inherited power-plant behavior, and its
+destruction causes a fixed-radius damaging blast. It occupies 3 × 2 cells and
+retains repair, sale and capture support. Rebuild its transparent world sprite
+and separate production icon with
 `new-design/build-nuclear-assets.ps1`.
 
 ## Naval and air production

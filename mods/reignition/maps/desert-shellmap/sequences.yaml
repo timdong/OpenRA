@@ -1,0 +1,559 @@
+daxia-chidian:
+	Defaults:
+		Filename: daxia-chidian.png
+		Scale: 0.9
+	idle:
+		Facings: 16
+	empty-idle:
+		Facings: 16
+	turret:
+		Facings: 16
+	move:
+		Facings: 16
+		Length: 2
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: daxia-chidian-icon.png
+		Scale: 1
+
+daxia-houyi:
+	Defaults:
+		Filename: daxia-houyi.png
+		Scale: 0.65
+	idle:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: daxia-houyi-icon.png
+		Scale: 1
+
+crimson-xingtian:
+	Defaults:
+		Filename: crimson-xingtian.png
+		Scale: 0.65
+	idle:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: crimson-xingtian-icon.png
+		Scale: 1
+
+crimson-thunderbolt:
+	Defaults:
+		Filename: crimson-thunderbolt.png
+		Scale: 0.65
+	idle:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	empty-move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: crimson-thunderbolt-icon.png
+		Scale: 1
+
+allied-prism:
+	Defaults:
+		Filename: allied-prism.png
+		Scale: 0.65
+	idle:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: allied-prism-icon.png
+		Scale: 1
+
+allied-hound:
+	Defaults:
+		Filename: allied-hound.png
+		Scale: 0.65
+	idle:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: allied-hound-icon.png
+		Scale: 1
+
+reignition-mcv:
+	Defaults:
+		Filename: reignition-mcv.png
+		Scale: 0.35
+	idle:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	move:
+		Facings: 1
+		Length: 1
+		Tick: 160
+	muzzle:
+	icon:
+		Filename: reignition-mcv-icon.png
+		Scale: 1
+
+daxia-fact:
+	Defaults:
+		Filename: daxia-fact.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+		Filename: reignition-mcv-deploy.png
+		Length: 6
+		Tick: 100
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-weap:
+	Defaults:
+		Filename: daxia-weap.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-barr:
+	Defaults:
+		Filename: daxia-barr.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-lab:
+	Defaults:
+		Filename: daxia-lab.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-refinery:
+	Defaults:
+		Filename: daxia-refinery.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: daxia-refinery-icon.png
+		Scale: 1
+
+daxia-silo:
+	Defaults:
+		Filename: daxia-silo.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	stages:
+		Length: 1
+	damaged-stages:
+		Length: 1
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-powr:
+	Defaults:
+		Filename: daxia-powr.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-dome:
+	Defaults:
+		Filename: daxia-dome.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-gun:
+	Defaults:
+		Filename: daxia-gun.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	muzzle:
+	dead:
+	icon:
+
+crimson-tsla:
+	Defaults:
+		Filename: crimson-tsla.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+allied-pdox:
+	Defaults:
+		Filename: allied-pdox.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+
+daxia-rocket:
+	stand:
+		Filename: daxia-rocket-idle.png
+		Scale: 0.55
+		Length: 1
+		Stride: 4
+		Facings: 1
+	stand2:
+		Filename: daxia-rocket-idle.png
+		Scale: 0.55
+		Length: 4
+		Facings: 1
+		Tick: 350
+	run:
+		Filename: daxia-rocket-walk.png
+		Scale: 0.55
+		Length: 6
+		Facings: 1
+		Tick: 120
+	shoot:
+		Filename: daxia-rocket-attack.png
+		Scale: 0.55
+		Length: 4
+		Facings: 1
+		Tick: 100
+	parachute:
+		Filename: daxia-rocket-idle.png
+		Scale: 0.55
+		Start: 0
+	idle1:
+		Filename: daxia-rocket-idle.png
+		Scale: 0.55
+		Length: 4
+		Tick: 300
+	idle2:
+		Filename: daxia-rocket-idle.png
+		Scale: 0.55
+		Length: 4
+		Tick: 350
+	icon:
+		Filename: daxia-rocket-icon.png
+	prone-stand:
+		Filename: e3.shp
+		Start: 144
+		Stride: 4
+		Facings: 1
+	prone-stand2:
+		Filename: e3.shp
+		Start: 144
+		Stride: 4
+		Facings: 1
+	prone-run:
+		Filename: e3.shp
+		Start: 144
+		Length: 4
+		Facings: 1
+		Tick: 120
+	prone-shoot:
+		Filename: e3.shp
+		Start: 192
+		Length: 10
+		Facings: 1
+	die1:
+		Filename: e3.shp
+		Start: 304
+		Length: 8
+		Tick: 80
+	die2:
+		Filename: e3.shp
+		Start: 312
+		Length: 8
+		Tick: 80
+	die3:
+		Filename: e3.shp
+		Start: 320
+		Length: 8
+		Tick: 80
+	die4:
+		Filename: e3.shp
+		Start: 328
+		Length: 12
+		Tick: 80
+	die5:
+		Filename: e3.shp
+		Start: 340
+		Length: 18
+		Tick: 80
+	die6:
+		Filename: electro.tem
+		TilesetFilenames:
+			SNOW: electro.sno
+		Frames: 0, 1, 2, 3, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+		Length: *
+		Tick: 80
+	die-crushed:
+		Filename: corpse1.tem
+		TilesetFilenames:
+			SNOW: corpse1.sno
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+
+daxia-fact:
+	icon:
+		Filename: daxia-fact-icon.png
+		Scale: 1
+
+daxia-weap:
+	icon:
+		Filename: daxia-weap-icon.png
+
+daxia-barr:
+	icon:
+		Filename: daxia-barr-icon.png
+
+daxia-lab:
+	icon:
+		Filename: daxia-lab-icon.png
+
+daxia-silo:
+	icon:
+		Filename: daxia-silo-icon.png
+
+daxia-powr:
+	icon:
+		Filename: daxia-powr-icon.png
+
+daxia-dome:
+	icon:
+		Filename: daxia-dome-icon.png
+
+daxia-gun:
+	icon:
+		Filename: daxia-gun-icon.png
+
+crimson-tsla:
+	icon:
+		Filename: crimson-tsla-icon.png
+
+allied-pdox:
+	icon:
+		Filename: allied-pdox-icon.png
+
+daxia-depot:
+	Defaults:
+		Filename: daxia-depot.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	active:
+	damaged-active:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: daxia-depot-icon.png
+		Scale: 1
+
+daxia-flak:
+	Defaults:
+		Filename: daxia-flak.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	turret:
+		Facings: 1
+	muzzle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: daxia-flak-icon.png
+		Scale: 1
+
+daxia-syrd:
+	Defaults:
+		Filename: daxia-syrd.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: daxia-syrd-icon.png
+		Scale: 1
+
+daxia-mslo:
+	Defaults:
+		Filename: daxia-mslo.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	active:
+	damaged-active:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: daxia-mslo-icon.png
+		Scale: 1
+
+crimson-iron:
+	Defaults:
+		Filename: crimson-iron.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	active:
+	damaged-active:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: crimson-iron-icon.png
+		Scale: 1
+
+allied-gapt:
+	Defaults:
+		Filename: allied-gapt.png
+		Scale: 0.5
+	idle:
+	damaged-idle:
+	make:
+	build:
+	place:
+	dead:
+	icon:
+		Filename: allied-gapt-icon.png
+		Scale: 1
+
+v2rl:
+	move:
+		Filename: v2rl.shp
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+	empty-move:
+		Filename: v2rl.shp
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+
+2tnk:
+	move:
+		Filename: 2tnk.shp
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+
+4tnk:
+	move:
+		Filename: 4tnk.shp
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+
+arty:
+	move:
+		Filename: arty.shp
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+
+mcv:
+	move:
+		Filename: mcv.shp
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+
+jeep:
+	move:
+		Filename: jeep.shp
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True

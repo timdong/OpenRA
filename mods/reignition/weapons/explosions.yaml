@@ -1,0 +1,17 @@
+ReactorExplode:
+	ValidTargets: Ground, Water, GroundActor, WaterActor
+	Warhead@1Dam: SpreadDamage
+		Spread: 1c0
+		Damage: 6000
+		Falloff: 1000, 500, 250, 100, 0
+		ValidTargets: GroundActor, WaterActor
+		Versus:
+			Wood: 100
+			Concrete: 50
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
+	Warhead@2Eff: CreateEffect
+		Explosions: building, large_explosion
+		ImpactSounds: kaboom22.aud
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: Crater
+		ValidTargets: GroundActor

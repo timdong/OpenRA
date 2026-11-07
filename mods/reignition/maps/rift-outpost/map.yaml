@@ -16,8 +16,6 @@ Visibility: MissionSelector
 
 Categories: Mission
 
-LockPreview: True
-
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral
@@ -807,6 +805,6 @@ Actors:
 
 Rules: ra|rules/campaign-rules.yaml, ra|rules/campaign-tooltips.yaml, ra|rules/campaign-palettes.yaml, rules.yaml
 
-Sequences: sequences.yaml
-
 FluentMessages: ra|fluent/lua.ftl, ra|fluent/campaign.ftl, map.ftl
+
+Sequences: sequences.yaml

@@ -1,0 +1,146 @@
+reignition-dd:
+	Defaults:
+		Filename: reignition-dd.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	muzzle:
+	icon:
+		Filename: reignition-dd-icon.png
+
+reignition-ftrk:
+	Defaults:
+		Filename: reignition-ftrk.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	turret:
+		Facings: 1
+	muzzle:
+	icon:
+		Filename: reignition-ftrk-icon.png
+
+reignition-harv:
+	Defaults:
+		Filename: reignition-harv.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	harvest:
+		Facings: 1
+	dock:
+		Facings: 1
+	dock-loop:
+		Facings: 1
+	icon:
+		Filename: reignition-harv-icon.png
+
+reignition-arty:
+	Defaults:
+		Filename: reignition-arty.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	move:
+		Facings: 1
+	muzzle:
+	icon:
+		Filename: reignition-arty-icon.png
+
+reignition-4tnk:
+	Defaults:
+		Filename: reignition-4tnk.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	move:
+		Facings: 1
+	turret:
+		Facings: 1
+	muzzle:
+	icon:
+		Filename: reignition-4tnk-icon.png
+
+reignition-apc:
+	Defaults:
+		Filename: reignition-apc.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	muzzle:
+	open:
+		Facings: 1
+	unload:
+		Facings: 1
+	icon:
+		Filename: reignition-apc-icon.png
+
+reignition-kirov:
+	Defaults:
+		Filename: reignition-kirov.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	icon:
+		Filename: reignition-kirov-icon.png
+
+reignition-mig:
+	Defaults:
+		Filename: reignition-mig.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	muzzle:
+	icon:
+		Filename: reignition-mig-icon.png
+
+reignition-mh60:
+	Defaults:
+		Filename: reignition-mh60.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	rotor:
+		Facings: 1
+	slow-rotor:
+		Facings: 1
+	muzzle:
+	icon:
+		Filename: reignition-mh60-icon.png
+
+reignition-ss:
+	Defaults:
+		Filename: reignition-ss.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	icon:
+		Filename: reignition-ss-icon.png
+
+reignition-ttnk:
+	Defaults:
+		Filename: reignition-ttnk.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	spinner:
+		Facings: 1
+	icon:
+		Filename: reignition-ttnk-icon.png
+
+reignition-v2rl:
+	Defaults:
+		Filename: reignition-v2rl.png
+		Scale: 0.5
+	idle:
+		Facings: 1
+	move:
+		Facings: 1
+	empty-idle:
+		Facings: 1
+	empty-move:
+		Facings: 1
+	icon:
+		Filename: reignition-v2rl-icon.png

@@ -1,9 +1,9 @@
 Metadata:
-	Title: Red Alert: Reignition
+	Title: mod-title
 	Version: {DEV_VERSION}
 	Website: https://www.openra.net
 	WebIcon32: https://www.openra.net/images/icons/ra_32x32.png
-	WindowTitle: Red Alert: Reignition - MVP
+	WindowTitle: mod-windowtitle
 
 PackageFormats: Mix
 
@@ -90,6 +90,7 @@ Rules:
 	ra|rules/fakes.yaml
 	ra|rules/map-generators.yaml
 	reignition|rules/structures.yaml
+	reignition|rules/units.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -100,6 +101,7 @@ Sequences:
 	ra|sequences/misc.yaml
 	ra|sequences/decorations.yaml
 	reignition|sequences/structures.yaml
+	reignition|sequences/units.yaml
 
 TileSets:
 	ra|tilesets/snow.yaml
@@ -193,6 +195,7 @@ Weapons:
 	ra|weapons/other.yaml
 	ra|weapons/smallcaliber.yaml
 	ra|weapons/superweapons.yaml
+	reignition|weapons/explosions.yaml
 
 Voices:
 	ra|audio/voices.yaml

@@ -5,7 +5,7 @@ NUCLEAR:
 		Prerequisites: techcenter, ~techlevel.high
 		Description: reignition-nuclear.description
 	Valued:
-		Cost: 2000
+		Cost: 2500
 	Tooltip:
 		Name: reignition-nuclear.name
 	Building:
@@ -17,9 +17,12 @@ NUCLEAR:
 	HitShape:
 		TargetableOffsets: 0,0,0
 	Health:
-		HP: 150000
+		HP: 140000
 	Power:
 		Amount: 500
+	FireWarheadsOnDeath:
+		Weapon: ReactorExplode
+		EmptyWeapon: ReactorExplode
 	RenderSprites:
 		Image: reignition-nuclear
 	-WithBuildingBib:

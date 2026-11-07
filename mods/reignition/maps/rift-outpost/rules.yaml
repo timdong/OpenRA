@@ -1,6 +1,6 @@
 Player:
 	PlayerResources:
-		DefaultCash: 4000
+		DefaultCash: 80000
 
 World:
 	LuaScript:
@@ -230,18 +230,17 @@ JEEP:
 ARTY:
 	RenderSprites:
 		FactionImages:
-			allies: daxia-houyi
+			allies: reignition-arty
 	WithMoveAnimation:
 	-WithMuzzleOverlay:
 	-WithParachute:
-	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-houyi
 
 V2RL:
 	RenderSprites:
 		FactionImages:
-			soviet: crimson-thunderbolt
+			soviet: reignition-v2rl
 	WithMoveAnimation:
 		Body: loaded
 		RequiresCondition: !reloading
@@ -250,19 +249,17 @@ V2RL:
 		MoveSequence: empty-move
 		RequiresCondition: reloading
 	-WithParachute:
-	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-thunderbolt
 
 4TNK:
 	RenderSprites:
 		FactionImages:
-			soviet: crimson-xingtian
+			soviet: reignition-4tnk
 	WithMoveAnimation:
 	-WithSpriteTurret:
 	-WithMuzzleOverlay:
 	-WithParachute:
-	-WithDamageOverlay:
 	Tooltip:
 		Name: reignition-actor-xingtian
 
@@ -342,6 +339,42 @@ PDOX:
 	RenderSprites:
 		FactionImages:
 			allies: allied-pdox
+	-WithBuildingBib:
+
+AGUN:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-flak
+	-WithBuildingBib:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+
+SYRD:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-syrd
+
+GAP:
+	RenderSprites:
+		FactionImages:
+			allies: allied-gapt
+	-WithBuildingBib:
+
+MSLO:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-mslo
+
+SILO:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-silo
+	-WithBuildingBib:
+
+IRON:
+	RenderSprites:
+		FactionImages:
+			soviet: crimson-iron
 	-WithBuildingBib:
 
 E3:

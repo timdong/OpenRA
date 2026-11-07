@@ -1,0 +1,107 @@
+# Static concept artwork for the standard Red Alert unit roster.
+# The source artwork contains one view, so the sprite body and turret overlays
+# are disabled where the image already includes the complete unit silhouette.
+
+DD:
+	RenderSprites:
+		Image: reignition-dd
+	-WithSpriteTurret:
+	-WithDamageOverlay:
+	Armament@SECONDARY:
+		Name: depth-charge
+		Weapon: DepthCharge
+
+PT:
+	Armament@SECONDARY:
+		Name: depth-charge
+		Weapon: DepthCharge
+
+FTRK:
+	RenderSprites:
+		Image: reignition-ftrk
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-WithDamageOverlay:
+
+HARV:
+	RenderSprites:
+		Image: reignition-harv
+	WithHarvesterSpriteBody:
+		ImageByFullness: reignition-harv, reignition-harv, reignition-harv
+	-WithDamageOverlay:
+
+ARTY:
+	RenderSprites:
+		Image: reignition-arty
+	-WithDamageOverlay:
+
+4TNK:
+	RenderSprites:
+		Image: reignition-4tnk
+	-WithDamageOverlay:
+
+APC:
+	RenderSprites:
+		Image: reignition-apc
+	-WithMuzzleOverlay:
+	-WithDamageOverlay:
+
+BADR:
+	RenderSprites:
+		Image: reignition-kirov
+
+BADR.Bomber:
+	RenderSprites:
+		Image: reignition-kirov
+
+MIG:
+	RenderSprites:
+		Image: reignition-mig
+
+YAK:
+	RenderSprites:
+		Image: reignition-mig
+	-WithMuzzleOverlay:
+
+MH60:
+	RenderSprites:
+		Image: reignition-mh60
+	-WithIdleOverlay@ROTORAIR:
+	-WithIdleOverlay@ROTORGROUND:
+	-WithMuzzleOverlay:
+
+SS:
+	RenderSprites:
+		Image: reignition-ss
+	-WithDamageOverlay:
+
+TTNK:
+	RenderSprites:
+		Image: reignition-ttnk
+	-WithIdleOverlay@SPINNER:
+	-WithDamageOverlay:
+
+V2RL:
+	RenderSprites:
+		Image: reignition-v2rl
+	-WithDamageOverlay:
+
+DOG:
+	Buildable:
+		Prerequisites: ~barracks, ~techlevel.infonly
+
+BARR:
+	Exit@1:
+		ProductionTypes: Soldier, Infantry, Dog
+	Exit@2:
+		ProductionTypes: Soldier, Infantry, Dog
+	Production:
+		Produces: Infantry, Soldier, Dog
+
+TENT:
+	Exit@1:
+		ProductionTypes: Soldier, Infantry, Dog
+	Exit@2:
+		ProductionTypes: Soldier, Infantry, Dog
+	Production:
+		Produces: Infantry, Soldier, Dog

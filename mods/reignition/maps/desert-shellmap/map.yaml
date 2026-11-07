@@ -28,8 +28,14 @@ Players:
 		Faction: allies
 	PlayerReference@Allies:
 		Name: Allies
+		Playable: True
+		Required: True
+		LockFaction: True
 		Faction: allies
 		Color: ABB7E4
+		LockColor: True
+		LockSpawn: True
+		LockTeam: True
 		Enemies: Soviets
 	PlayerReference@Soviets:
 		Name: Soviets
@@ -1264,6 +1270,10 @@ Actors:
 		Location: 1,28
 		Owner: Neutral
 
-Rules: ra|rules/campaign-palettes.yaml, rules.yaml
+Rules: ra|rules/campaign-rules.yaml, ra|rules/campaign-tooltips.yaml, ra|rules/campaign-palettes.yaml, rules.yaml
+
+FluentMessages: ra|fluent/lua.ftl, ra|fluent/campaign.ftl, map.ftl
+
+Sequences: sequences.yaml
 
 Weapons: weapons.yaml
