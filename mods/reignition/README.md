@@ -125,8 +125,10 @@ ground targets and return to this airfield to reload. The submarine uses the
 naval yard's boat exits and retains its torpedoes and underwater detection.
 The Kirov is a selectable, controllable bomber costing 2500 credits, with
 100000 health, slow movement and a bomb every 75 ticks at close range. It has
-no anti-air weapon. AI production lists and air/naval squad classifications
-include these variants. Special-mode maps retain their original rosters.
+no anti-air weapon. The eight added Daxia unit variants and their airfield
+are reserved for human players. Rush, Normal, Turtle and Naval AI use the
+inherited RA production lists and cannot unlock the added variants, even
+when playing Daxia. Special-mode maps retain their original rosters.
 
 The inherited naval and air roster remains available:
 

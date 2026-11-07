@@ -4,7 +4,7 @@
 AFLD.DAXIA:
 	Inherits: AFLD
 	Buildable:
-		Prerequisites: dome, ~structures.allies, ~techlevel.medium
+		Prerequisites: ~daxia-human-arsenal, dome, ~structures.allies, ~techlevel.medium
 		Description: reignition-daxia-airfield.description
 	Tooltip:
 		Name: reignition-daxia-airfield.name
@@ -19,7 +19,7 @@ AFLD.DAXIA:
 MIG.DAXIA:
 	Inherits: MIG
 	Buildable:
-		Prerequisites: ~afld.daxia, atek, ~techlevel.high
+		Prerequisites: ~daxia-human-arsenal, ~afld.daxia, atek, ~techlevel.high
 		Description: reignition-daxia-mig.description
 	Tooltip:
 		Name: reignition-daxia-mig.name
@@ -29,7 +29,7 @@ MIG.DAXIA:
 4TNK.DAXIA:
 	Inherits: 4TNK
 	Buildable:
-		Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high
+		Prerequisites: ~daxia-human-arsenal, fix, atek, ~vehicles.allies, ~techlevel.high
 	Tooltip:
 		Name: reignition-daxia-heavy-tank
 		GenericName: reignition-daxia-heavy-tank
@@ -37,14 +37,14 @@ MIG.DAXIA:
 FTRK.DAXIA:
 	Inherits: FTRK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low
+		Prerequisites: ~daxia-human-arsenal, ~vehicles.allies, ~techlevel.low
 	Tooltip:
 		Name: reignition-daxia-flak-track
 
 TTNK.DAXIA:
 	Inherits: TTNK
 	Buildable:
-		Prerequisites: dome, atek, ~vehicles.allies, ~techlevel.high
+		Prerequisites: ~daxia-human-arsenal, dome, atek, ~vehicles.allies, ~techlevel.high
 	Tooltip:
 		Name: reignition-daxia-tesla-tank
 		GenericName: reignition-daxia-tesla-tank
@@ -52,7 +52,7 @@ TTNK.DAXIA:
 V2RL.DAXIA:
 	Inherits: V2RL
 	Buildable:
-		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium
+		Prerequisites: ~daxia-human-arsenal, dome, ~vehicles.allies, ~techlevel.medium
 	Tooltip:
 		Name: reignition-daxia-missile-launcher
 
@@ -60,14 +60,14 @@ SS.DAXIA:
 	Inherits: SS
 	Buildable:
 		BuildAtProductionType: Boat
-		Prerequisites: ~syrd, ~techlevel.low
+		Prerequisites: ~daxia-human-arsenal, ~syrd, ~techlevel.low
 	Tooltip:
 		Name: reignition-daxia-submarine
 
 APC.DAXIA:
 	Inherits: APC
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low
+		Prerequisites: ~daxia-human-arsenal, ~vehicles.allies, ~techlevel.low
 	Tooltip:
 		Name: reignition-daxia-apc
 
@@ -78,7 +78,7 @@ KIROV.DAXIA:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 60
-		Prerequisites: ~hpad, atek, ~aircraft.allies, ~techlevel.high
+		Prerequisites: ~daxia-human-arsenal, ~hpad, atek, ~aircraft.allies, ~techlevel.high
 		Description: reignition-daxia-kirov.description
 	Valued:
 		Cost: 2500
@@ -118,85 +118,9 @@ KIROV.DAXIA:
 		Bounds: 2048, 1536
 		DecorationBounds: 2304, 1792
 
-# Keep AI players able to produce and command the same Daxia roster.
+# Reserve the added arsenal for human players. The inherited RA AI roster stays
+# intact; all four lobby bot types are denied this production prerequisite.
 Player:
-	UnitBuilderBotModule@rush:
-		UnitsToBuild:
-			apc.daxia: 30
-			v2rl.daxia: 40
-			ftrk.daxia: 30
-			4tnk.daxia: 25
-			ttnk.daxia: 25
-		UnitLimits:
-			ftrk.daxia: 4
-	SquadManagerBotModule@rush:
-		AirUnitsTypes: mig, yak, heli, hind, mh60, mig.daxia, kirov.daxia
-		NavalUnitsTypes: ss, msub, dd, ca, lst, pt, ss.daxia
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, afld.daxia
-	UnitBuilderBotModule@normal:
-		UnitsToBuild:
-			apc.daxia: 30
-			v2rl.daxia: 40
-			ftrk.daxia: 30
-			4tnk.daxia: 25
-			ttnk.daxia: 25
-			mig.daxia: 30
-			ss.daxia: 10
-			kirov.daxia: 5
-		UnitLimits:
-			ftrk.daxia: 4
-			kirov.daxia: 2
-	SquadManagerBotModule@normal:
-		AirUnitsTypes: mig, yak, heli, hind, mh60, mig.daxia, kirov.daxia
-		NavalUnitsTypes: ss, msub, dd, ca, lst, pt, ss.daxia
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, afld.daxia
-	BaseBuilderBotModule@normal:
-		TechTypes: dome, atek, stek, fix, afld, hpad, afld.daxia
-		BuildingLimits:
-			afld.daxia: 4
-		BuildingFractions:
-			afld.daxia: 1
-	UnitBuilderBotModule@turtle:
-		UnitsToBuild:
-			apc.daxia: 30
-			v2rl.daxia: 40
-			ftrk.daxia: 50
-			4tnk.daxia: 25
-			ttnk.daxia: 25
-			mig.daxia: 30
-			ss.daxia: 10
-			kirov.daxia: 5
-		UnitLimits:
-			ftrk.daxia: 4
-			kirov.daxia: 2
-	SquadManagerBotModule@turtle:
-		AirUnitsTypes: mig, yak, heli, hind, mh60, mig.daxia, kirov.daxia
-		NavalUnitsTypes: ss, msub, dd, ca, lst, pt, ss.daxia
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, afld.daxia
-	BaseBuilderBotModule@turtle:
-		TechTypes: dome, atek, stek, fix, afld, hpad, afld.daxia
-		BuildingLimits:
-			afld.daxia: 4
-		BuildingFractions:
-			afld.daxia: 2
-	UnitBuilderBotModule@naval:
-		UnitsToBuild:
-			ftrk.daxia: 40
-			v2rl.daxia: 40
-			mig.daxia: 15
-			ss.daxia: 10
-			kirov.daxia: 5
-		UnitLimits:
-			ftrk.daxia: 3
-			v2rl.daxia: 1
-			kirov.daxia: 2
-	SquadManagerBotModule@naval:
-		AirUnitsTypes: mig, yak, heli, hind, mh60, mig.daxia, kirov.daxia
-		NavalUnitsTypes: ss, msub, dd, ca, lst, pt, ss.daxia
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, afld.daxia
-	BaseBuilderBotModule@naval:
-		ProductionTypes: barr,tent,weap,afld,hpad, afld.daxia
-		BuildingLimits:
-			afld.daxia: 8
-		BuildingFractions:
-			afld.daxia: 15
+	ProvidesPrerequisite@DAXIAHUMANARSENAL:
+		Prerequisite: daxia-human-arsenal
+		RequiresCondition: !(enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai)
