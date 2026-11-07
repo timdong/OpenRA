@@ -114,11 +114,17 @@ scripted campaign rosters are preserved.
 | Mobile flak (`FTRK.DAXIA`) | Vehicle works | Low technology |
 | Armored transport (`APC.DAXIA`) | Vehicle works | Low technology |
 | Missile launcher (`V2RL.DAXIA`) | Vehicle works | Radar; medium technology |
-| Heavy tank (`4TNK.DAXIA`) | Vehicle works | Research center and repair depot; high technology |
+| Heavy tank (`4TNK.DAXIA`) | Vehicle works | Low technology; human players only |
 | Tesla tank (`TTNK.DAXIA`) | Vehicle works | Research center and radar; high technology |
 | Strike fighter (`MIG.DAXIA`) | Daxia airfield | Research center; high technology |
 | Attack submarine (`SS.DAXIA`) | Naval yard | Low technology |
 | Kirov airship (`KIROV.DAXIA`) | Helipad | Research center; high technology |
+
+The medium tank (`2TNK`) and Daxia heavy tank (`4TNK.DAXIA`) are available
+as soon as the vehicle works is built at low technology or above. Neither
+requires a repair depot, radar or research center. Human Daxia players build
+these two tanks in 75% of their original production time, with prices unchanged.
+AI players do not receive this production bonus or access to the Daxia heavy tank.
 
 The Daxia airfield costs 500 credits and requires radar. Strike fighters attack
 ground targets and return to this airfield to reload. The submarine uses the

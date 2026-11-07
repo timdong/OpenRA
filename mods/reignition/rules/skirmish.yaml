@@ -3,7 +3,7 @@
 
 2TNK:
 	Buildable:
-		Prerequisites: weap, ~vehicles.allies, ~techlevel.medium
+		Prerequisites: weap, ~vehicles.allies, ~techlevel.low
 		Description: reignition-actor-iris-description
 	Tooltip:
 		Name: reignition-actor-iris

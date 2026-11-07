@@ -12,7 +12,7 @@ prerequisites without changing those original support actors.
 | Source design | Daxia actor | Availability |
 | --- | --- | --- |
 | `nu_mig` | `MIG.DAXIA` | Added: Daxia airfield + research center |
-| `nu_htnk` | `4TNK.DAXIA` | Added: vehicle works + repair depot + research center |
+| `nu_htnk` | `4TNK.DAXIA` | Human players: vehicle works, low technology; 25% shorter production time |
 | `nu_ftrk` | `FTRK.DAXIA` | Added: vehicle works |
 | `nu_ttnk` | `TTNK.DAXIA` | Added: vehicle works + radar + research center |
 | `nu_v3` | `V2RL.DAXIA` | Added: vehicle works + radar |

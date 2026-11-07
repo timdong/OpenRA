@@ -26,10 +26,20 @@ MIG.DAXIA:
 	Rearmable:
 		RearmActors: afld.daxia, afld, afld.ukraine
 
+2TNK:
+	ProductionTimeMultiplier@DAXIAEARLYARMOR:
+		Multiplier: 75
+		Prerequisites: daxia-human-arsenal, vehicles.allies
+		Queue: Vehicle
+
 4TNK.DAXIA:
 	Inherits: 4TNK
 	Buildable:
-		Prerequisites: ~daxia-human-arsenal, fix, atek, ~vehicles.allies, ~techlevel.high
+		Prerequisites: ~daxia-human-arsenal, weap, ~vehicles.allies, ~techlevel.low
+	ProductionTimeMultiplier@DAXIAEARLYARMOR:
+		Multiplier: 75
+		Prerequisites: daxia-human-arsenal, vehicles.allies
+		Queue: Vehicle
 	Tooltip:
 		Name: reignition-daxia-heavy-tank
 		GenericName: reignition-daxia-heavy-tank
