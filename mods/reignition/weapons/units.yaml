@@ -1,0 +1,4 @@
+ReignitionKirovBomb:
+	Inherits: ParaBomb
+	ReloadDelay: 75
+	Range: 1c0

@@ -803,8 +803,8 @@ Actors:
 		Location: 15,81
 		Owner: USSR
 
-Rules: ra|rules/campaign-rules.yaml, ra|rules/campaign-tooltips.yaml, ra|rules/campaign-palettes.yaml, rules.yaml
+Rules: reignition|rules/daxia-arsenal.yaml, ra|rules/campaign-rules.yaml, ra|rules/campaign-tooltips.yaml, ra|rules/campaign-palettes.yaml, rules.yaml
 
-FluentMessages: ra|fluent/lua.ftl, ra|fluent/campaign.ftl, map.ftl
+FluentMessages: reignition|fluent/daxia-arsenal.ftl, ra|fluent/lua.ftl, ra|fluent/campaign.ftl, map.ftl
 
 Sequences: sequences.yaml

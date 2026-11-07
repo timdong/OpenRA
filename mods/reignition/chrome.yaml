@@ -1,0 +1,3 @@
+# Override the Allied-side atlas only; keep the inherited region coordinates.
+sidebar-allies:
+	Image: reignition|uibits/sidebar.png

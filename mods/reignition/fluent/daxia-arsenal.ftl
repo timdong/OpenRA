@@ -1,0 +1,15 @@
+reignition-daxia-airfield =
+    .name = Daxia Airfield
+    .description = Produces and rearms Daxia strike fighters. Requires tactical radar. Fighters also require a research center.
+reignition-daxia-mig =
+    .name = Daxia Strike Fighter
+    .description = Fast missile aircraft against vehicles and structures. Returns to a Daxia airfield to reload. Cannot attack aircraft.
+reignition-daxia-heavy-tank = Daxia Heavy Tank
+reignition-daxia-flak-track = Daxia Mobile Flak
+reignition-daxia-tesla-tank = Daxia Tesla Tank
+reignition-daxia-missile-launcher = Daxia Missile Launcher
+reignition-daxia-submarine = Daxia Attack Submarine
+reignition-daxia-apc = Daxia Armored Transport
+reignition-daxia-kirov =
+    .name = Daxia Kirov Airship
+    .description = Slow, heavily armored bomber. Drops bombs directly over ground and naval targets. Cannot attack aircraft. Requires a helipad and research center.

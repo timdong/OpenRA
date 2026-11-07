@@ -91,6 +91,7 @@ Rules:
 	ra|rules/map-generators.yaml
 	reignition|rules/structures.yaml
 	reignition|rules/units.yaml
+	reignition|rules/factions.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -114,6 +115,7 @@ Cursors:
 
 Chrome:
 	ra|chrome.yaml
+	reignition|chrome.yaml
 
 Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll
 
@@ -196,6 +198,7 @@ Weapons:
 	ra|weapons/smallcaliber.yaml
 	ra|weapons/superweapons.yaml
 	reignition|weapons/explosions.yaml
+	reignition|weapons/units.yaml
 
 Voices:
 	ra|audio/voices.yaml
@@ -268,6 +271,7 @@ Fonts:
 
 Missions:
 	reignition|missions.yaml
+	ra|missions.yaml
 
 MapGrid:
 	Type: Rectangular

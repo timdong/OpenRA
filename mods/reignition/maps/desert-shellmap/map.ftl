@@ -21,8 +21,6 @@ reignition-establish-base = Deploy the Daxia MCV and build a refinery
 reignition-destroy-labs = Destroy or capture all three temporal research hubs
 reignition-capture-radar = Optional: Capture the radar dome to mark the targets
 
-reignition-faction-daxia = Daxia Iron Fist
-reignition-faction-crimson = Crimson Tide
 reignition-actor-hound = Hound Scout Buggy
 reignition-actor-chidian = Chidian Assault Rover
 reignition-actor-houyi = Houyi Railgun Platform

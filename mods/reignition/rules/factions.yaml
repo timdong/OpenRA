@@ -1,0 +1,29 @@
+# LobbyLogic reads factions from the default mod rules, not map overrides.
+# Keep selectable factions and random pools consistent in the lobby and game.
+World:
+	Faction@allies:
+		Name: reignition-faction-daxia
+		Selectable: True
+		Description: reignition-faction-daxia-description
+	Faction@soviet:
+		Name: reignition-faction-crimson
+		Selectable: True
+		Description: reignition-faction-crimson-description
+	Faction@england:
+		Selectable: False
+	Faction@france:
+		Selectable: False
+	Faction@germany:
+		Selectable: False
+	Faction@russia:
+		Selectable: False
+	Faction@ukraine:
+		Selectable: False
+	Faction@random:
+		RandomFactionMembers: allies, soviet
+	Faction@randomallies:
+		Selectable: False
+		RandomFactionMembers: allies
+	Faction@randomsoviet:
+		Selectable: False
+		RandomFactionMembers: soviet

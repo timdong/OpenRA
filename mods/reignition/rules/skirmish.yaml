@@ -1,0 +1,356 @@
+# Shared Reignition faction rules for the bundled skirmish maps.
+# Map-specific rules load after these to retain their special game modes.
+
+2TNK:
+	Buildable:
+		Prerequisites: weap, ~vehicles.allies, ~techlevel.medium
+		Description: reignition-actor-iris-description
+	Tooltip:
+		Name: reignition-actor-iris
+		GenericName: reignition-actor-iris
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		SkipMakeAnimation: true
+		UndeployOnMove: true
+	Mobile:
+		RequiresCondition: !deployed
+	RangeMultiplier@DEPLOYED:
+		RequiresCondition: deployed
+		Modifier: 150
+	ReloadDelayMultiplier@DEPLOYED:
+		RequiresCondition: deployed
+		Modifier: 75
+
+3TNK:
+	Buildable:
+		Prerequisites: weap, ~vehicles.soviet, ~techlevel.medium
+		Description: reignition-actor-buran-description
+	Tooltip:
+		Name: reignition-actor-buran
+		GenericName: reignition-actor-buran
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		SkipMakeAnimation: true
+		UndeployOnMove: true
+	Mobile:
+		RequiresCondition: !deployed
+	DamageMultiplier@DEPLOYED:
+		RequiresCondition: deployed
+		Modifier: 75
+
+STEK:
+	Tooltip:
+		Name: reignition-actor-rift-lab
+
+PDOX:
+	Tooltip:
+		Name: reignition-chrono-terminal
+	ChronoshiftPower@chronoshift:
+		ChargeInterval: 1500
+		Name: reignition-chrono-power
+		Description: reignition-chrono-power-description
+
+FACT:
+	Tooltip:
+		Name: reignition-building-command-core
+
+POWR:
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: reignition-building-power-plant
+	Buildable:
+		Description: reignition-building-power-plant-description
+	ExternalCondition@POWERLINK:
+		Condition: power-linked
+	ProximityExternalCondition@POWERLINK:
+		Condition: power-linked
+		Range: 3c0
+	PowerMultiplier@POWERLINK:
+		RequiresCondition: power-linked
+		Modifier: 112
+
+PROC:
+	Valued:
+		Cost: 1800
+	Tooltip:
+		Name: reignition-building-refinery
+
+DOME:
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: reignition-building-radar
+	Power:
+		Amount: -50
+
+WEAP:
+	Tooltip:
+		Name: reignition-building-war-factory
+	Power:
+		Amount: -50
+
+TENT:
+	Tooltip:
+		Name: reignition-building-field-barracks
+
+BARR:
+	Tooltip:
+		Name: reignition-building-arsenal
+
+FIX:
+	Tooltip:
+		Name: reignition-building-logistics
+
+ATEK:
+	Buildable:
+		Prerequisites: weap, dome, ~structures.allies, ~techlevel.medium
+		Description: reignition-building-research-description
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: reignition-building-research
+	Power:
+		Amount: -75
+
+GUN:
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: reignition-building-sentry
+	Buildable:
+		Description: reignition-building-sentry-description
+	Power:
+		Amount: -20
+	ExternalCondition@FIRECONTROL:
+		Condition: fire-control-linked
+	ProximityExternalCondition@FIRECONTROL:
+		Condition: fire-control-linked
+		Range: 3c0
+	RangeMultiplier@FIRECONTROL:
+		RequiresCondition: fire-control-linked
+		Modifier: 110
+
+TSLA:
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: reignition-building-tesla
+	Buildable:
+		Description: reignition-building-tesla-description
+	Power:
+		Amount: -75
+	ExternalCondition@FIRECONTROL:
+		Condition: fire-control-linked
+	ProximityExternalCondition@FIRECONTROL:
+		Condition: fire-control-linked
+		Range: 3c0
+	RangeMultiplier@FIRECONTROL:
+		RequiresCondition: fire-control-linked
+		Modifier: 110
+
+AGUN:
+	Tooltip:
+		Name: reignition-building-flak
+	Power:
+		Amount: -30
+
+SAM:
+	Tooltip:
+		Name: reignition-building-sam
+	Power:
+		Amount: -30
+
+MCV:
+	RenderSprites:
+		FactionImages:
+			allies: reignition-mcv
+	WithMoveAnimation:
+	-WithParachute:
+	-WithDamageOverlay:
+
+JEEP:
+	RenderSprites:
+		FactionImages:
+			allies: allied-hound
+	WithMoveAnimation:
+	-WithMuzzleOverlay:
+	-WithSpriteTurret:
+	-WithParachute:
+	-WithDamageOverlay:
+	Tooltip:
+		Name: reignition-actor-hound
+
+2TNK:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-chidian
+	WithMoveAnimation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-WithParachute:
+	-WithDamageOverlay:
+	Tooltip:
+		Name: reignition-actor-chidian
+		GenericName: reignition-actor-chidian
+
+ARTY:
+	RenderSprites:
+		FactionImages:
+			allies: reignition-arty
+	WithMoveAnimation:
+	-WithMuzzleOverlay:
+	-WithParachute:
+	Tooltip:
+		Name: reignition-actor-houyi
+
+V2RL:
+	RenderSprites:
+		FactionImages:
+			soviet: reignition-v2rl
+	WithMoveAnimation:
+		Body: loaded
+		RequiresCondition: !reloading
+	WithMoveAnimation@EMPTY:
+		Body: reloading
+		MoveSequence: empty-move
+		RequiresCondition: reloading
+	-WithParachute:
+	Tooltip:
+		Name: reignition-actor-thunderbolt
+
+4TNK:
+	RenderSprites:
+		FactionImages:
+			soviet: reignition-4tnk
+	WithMoveAnimation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-WithParachute:
+	Tooltip:
+		Name: reignition-actor-xingtian
+
+FACT:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-fact
+	-WithBuildingBib:
+
+POWR:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-powr
+	-WithBuildingBib:
+
+PROC:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-refinery
+	-WithBuildingBib:
+	-WithIdleOverlay@TOP:
+
+DOME:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-dome
+	-WithBuildingBib:
+
+WEAP:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-weap
+	-WithBuildingBib:
+	-WithProductionDoorOverlay:
+
+TENT:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-barr
+	-WithBuildingBib:
+
+BARR:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-barr
+	-WithBuildingBib:
+
+ATEK:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-lab
+	-WithBuildingBib:
+
+STEK:
+	RenderSprites:
+		FactionImages:
+			soviet: daxia-lab
+	-WithBuildingBib:
+
+GUN:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-gun
+	-WithBuildingBib:
+	-WithSpriteTurret:
+	-WithTurretAttackAnimation:
+	-WithMuzzleOverlay:
+
+TSLA:
+	RenderSprites:
+		FactionImages:
+			soviet: crimson-tsla
+	-WithBuildingBib:
+	-WithTeslaChargeAnimation:
+
+PDOX:
+	RenderSprites:
+		FactionImages:
+			allies: allied-pdox
+	-WithBuildingBib:
+
+AGUN:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-flak
+	-WithBuildingBib:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+
+SYRD:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-syrd
+
+GAP:
+	RenderSprites:
+		FactionImages:
+			allies: allied-gapt
+	-WithBuildingBib:
+
+MSLO:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-mslo
+
+SILO:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-silo
+	-WithBuildingBib:
+
+IRON:
+	RenderSprites:
+		FactionImages:
+			soviet: crimson-iron
+	-WithBuildingBib:
+
+E3:
+	RenderSprites:
+		FactionImages:
+			allies: daxia-rocket
+	WithFacingSpriteBody:
+		Sequence: stand
+	Tooltip:
+		Name: reignition-actor-rocket
+	Buildable:
+		Description: reignition-actor-rocket-description
